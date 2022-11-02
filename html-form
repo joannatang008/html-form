@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Your order</h1>
+<form action="" method="get" id="order-form">
+    <div>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your full name"autofocus>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@example.com" autofocus >
+        </div>
+    </div>
+    <div>
+        <div>
+            <label for="address1">Address</label>
+            <input type="text" name="address" id="address1">
+            <input type="text" name="address" id="address2">
+        </div>
+    </div>
+    <div>
+        <div>
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+        </div>
+
+        <div>
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+            </select>   
+        </div>
+        <div>
+            <label for="zip">Zip</label>
+            <input type="text" name="zip" id="zip">
+        </div>
+    </div>
+    <div>
+        <div>
+            <label>What color samples do you like?</label>
+            <input type="checkbox" name="color" id="color=white" value="white" disabled> 
+            <label for="color-white"> White</label>
+            <input type="checkbox" name="color" id="color=Red" value="red"> 
+            <label for="color-white"> Red</label>
+            <input type="checkbox" name="color" id="color=blue" value="blue"> 
+            <label for="color-white"> Blue</label>
+        </div>
+    </div>
+    <div>
+        <label>How large is your company?</label>
+        <input type="radio" name="company size" id="small-company">
+        <label for="small-company">1-5 people</label>
+        <input type="radio" name="company size" id="medium-company">
+        <label for="medium-company">5-10 people</label>
+        <input type="radio" name="company size" id="large-company">
+        <label for="large-company">10+ people</label>
+    </div>
+    <div>
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <input type="checkbox" name="sign-up" id="sign-up">
+        <label for="sign-up">Sign up for special samples</label>
+        <button form="order-form">Place Order</button>
+        <input type="submit" value="Place order">
+    </div>
+</form>
+</body>
+</html>
